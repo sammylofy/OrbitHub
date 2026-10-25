@@ -1,8 +1,123 @@
 {% extends "base.html" %}
 
-{% block title %}About Us - OrbitHub{% endblock %}
+{% block title %}About Us | CyberHub Solutions and Systems Ltd{% endblock %}
+
+{% block styles %}
+<style>
+    .page-header {
+        background: var(--hero-bg);
+        color: #ffffff;
+        padding: 70px 20px;
+        text-align: center;
+    }
+
+    .page-header h1 {
+        font-size: 2.8rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+
+    .page-header p {
+        color: #94a3b8;
+        font-size: 1.15rem;
+    }
+
+    .about-container {
+        max-width: 1100px;
+        margin: 60px auto;
+        padding: 0 20px;
+    }
+
+    .about-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+
+    @media(max-width: 768px) {
+        .about-grid {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+    }
+
+    .about-text h2 {
+        font-size: 2rem;
+        font-weight: 800;
+        margin-bottom: 20px;
+    }
+
+    .about-text p {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        opacity: 0.85;
+        margin-bottom: 20px;
+    }
+
+    .vision-mission {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .vm-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-color);
+        padding: 35px;
+        border-radius: 16px;
+        box-shadow: var(--shadow);
+    }
+
+    .vm-card h3 {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--accent-color);
+        margin-bottom: 15px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .vm-card p {
+        font-size: 0.98rem;
+        line-height: 1.7;
+        opacity: 0.85;
+    }
+</style>
+{% endblock %}
 
 {% block content %}
-    <h1>About OrbitHub</h1>
-    <p>Learn more about our mission and team.</p>
+<div class="page-header">
+    <h1>About CyberHub Solutions</h1>
+    <p>Incorporated under the Companies and Allied Matters Act 2020 (RC 8221971)</p>
+</div>
+
+<div class="about-container">
+    <div class="about-grid">
+        <div class="about-text">
+            <h2>Who We Are</h2>
+            <p><strong>CyberHub Solutions and Systems Ltd</strong> is a diversified enterprise providing end-to-end engineering, software solutions, and consultancy services in Information Technology and Telecommunications engineering across Nigeria and Africa.</p>
+            <p>Managed by a dynamic team of innovators and certified engineering experts, we deliver superior returns to our clients through cost-effective, value-oriented workforce development and infrastructure deployment.</p>
+        </div>
+        <div class="about-text">
+            <h2>Our Corporate Foundation</h2>
+            <p>Formally registered and incorporated in January 2025 (RC: 8221971), we specialize in full automation of company processes, network service provision, fiber optics, radio frequency engineering, and capacity building.</p>
+            <p>Our unwavering commitment to our watchwords—<strong>Partnership, Relationship, and Commitment to Excellence</strong>—drives our success across every project.</p>
+        </div>
+    </div>
+
+    <div class="vision-mission">
+        <div class="vm-card">
+            <h3><i class="fa-solid fa-eye"></i> Our Vision</h3>
+            <p>To be a trusted resource partner and provide value-added services for the IT and Telecommunications segment in the African market, innovating to deliver value and enhance customer satisfaction.</p>
+        </div>
+        <div class="vm-card">
+            <h3><i class="fa-solid fa-bullseye"></i> Our Mission</h3>
+            <p>We are committed to enhancing ultimate customer satisfaction by focusing on providing solutions that will move businesses in leaps and bounds through cutting-edge technology and precision execution.</p>
+        </div>
+    </div>
+</div>
 {% endblock %}
