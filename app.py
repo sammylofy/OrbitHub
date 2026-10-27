@@ -14,5 +14,9 @@ def about():
 def contact():
     return render_template('contact_us.html')
 
+@app.route('/healthz')
+def health_check():
+    return "OK", 200
+
 if __name__ == '__main__':
     app.run(debug=True)
