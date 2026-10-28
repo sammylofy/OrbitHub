@@ -175,6 +175,26 @@
         text-decoration: underline;
     }
 
+    /* Training Subsection */
+    .training-subsection {
+        margin-top: 70px;
+        padding-top: 60px;
+        border-top: 1px solid var(--border-color);
+    }
+
+    .training-badge {
+        display: inline-block;
+        background: rgba(2, 132, 199, 0.1);
+        color: var(--accent-color);
+        font-size: 0.85rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding: 6px 16px;
+        border-radius: 50px;
+        margin-bottom: 14px;
+    }
+
     /* Why Choose Us */
     .why-section {
         background: var(--card-bg);
@@ -339,6 +359,41 @@
             <h3>Cyber/Security & Consultancy</h3>
             <p>Specialized cybersecurity services, comprehensive EHS compliance plans, capacity building, technical training, and institutional consultancy.</p>
             <a href="{{ url_for('contact') }}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Training & Skills Acquisition Hub Subsection -->
+    <div class="training-subsection">
+        <div class="section-header">
+            <span class="training-badge">Training Services</span>
+            <h2>Training &amp; Skills Acquisition Hub</h2>
+            <p>Specialized, hands-on technical training programs in telecommunications, software systems, and cybersecurity designed to equip engineers and IT professionals with industry-ready skills.</p>
+        </div>
+
+        <div class="services-grid">
+            <!-- Training Service 1 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-satellite-dish"></i></div>
+                <h3>Telecoms &amp; RF Engineering Training</h3>
+                <p>Comprehensive beginner-to-advanced program covering RF fundamentals, antenna design, propagation, link budgets, measurement, troubleshooting, and real-world system deployment. Includes labs, simulations, and a capstone project.</p>
+                <a href="{{ url_for('contact') }}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Training Service 2 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>Software Development &amp; Systems Engineering</h3>
+                <p>Hands-on training in modern software engineering — programming, full-stack development, APIs, databases, testing, DevOps, and system design. Participants build production-ready applications through practical projects.</p>
+                <a href="{{ url_for('contact') }}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+
+            <!-- Training Service 3 -->
+            <div class="service-card">
+                <div class="service-icon"><i class="fa-solid fa-user-shield"></i></div>
+                <h3>Cybersecurity Capacity Building</h3>
+                <p>Practical cybersecurity program covering threat analysis, network &amp; application security, ethical hacking, incident response, cloud security, and compliance. Designed to equip professionals with industry-ready defensive and offensive skills.</p>
+                <a href="{{ url_for('contact') }}" class="service-link">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
         </div>
     </div>
 </section>
